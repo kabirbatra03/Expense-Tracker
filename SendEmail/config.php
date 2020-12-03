@@ -11,8 +11,8 @@ define('CONTACTFORM_TO_NAME', 'Expense Tracker');
 
 // The details of your SMTP service, e.g. Gmail.
 define('CONTACTFORM_SMTP_HOSTNAME', 'smtp.gmail.com'); //change it if you using other than gmail
-define('CONTACTFORM_SMTP_USERNAME', 'kabirbatrakkbb@gmail.com');
-define('CONTACTFORM_SMTP_PASSWORD', 'noicetoits');
+define('CONTACTFORM_SMTP_USERNAME', 'YourGoogleAccountOnly@gmail.com');
+define('CONTACTFORM_SMTP_PASSWORD', 'your password');
 
 
 /**
