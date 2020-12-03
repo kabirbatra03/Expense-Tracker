@@ -25,7 +25,7 @@ try {
     $mail->Port = CONTACTFORM_SMTP_PORT;
 
     // Recipients
-     $mail->setFrom('kabirbatrakkbb@gmail.com', 'Expense Tracker');
+     $mail->setFrom('YourGoogleAccountOnly@gmail.com', 'Expense Tracker');
     $mail->addAddress($email);
 
     // Content
