@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c7d9022871.js" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="https://use.typekit.net/xxc5uae.css">
+    <link href="home.css" type="text/css" rel="stylesheet" >
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>  
+      
+    <title>Dashboard</title>
+    <style>  
+
+--font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+--font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+color: #212529;
+box-sizing: border-box;
+margin-top: 0;
+font-weight: 500;
+line-height: 1.2;
+text-align: center;
+margin-bottom: 50px;
+font-size: 50px;
+       .container form{
+            position: relative;
+            background-color: white;
+            border: 1px solid #888;
+            border-radius: 20px;
+            padding: 50px;
+        }
+        .container form h1{
+            
+           background-color:  #0ED31A;
+           margin-bottom: 50px;
+           font-size:250%;
+           padding: 10px 20px;
+            border-radius:8px;
+        }
+        .container form button{
+           width: 100%;
+           border-radius:50px;
+           border: 1px solid #ccc;
+           margin-top:10px;
+           padding: 10px 10px;
+
+        }
+        .container form button:hover{
+            background-color: black;
+            color:white;
+            border: 1px solid dodgerblue;  
+        }
+
+
+        .container form label{
+           padding-left: 10px;
+        }    
+
+        .container form input{
+          border-radius:10px;
+          width: 100%;
+          padding: 10px 20px;
+          margin-bottom: 10px;
+          display: inline-block;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+        }
+
+        .container-signin {
+          padding: 16px; 
+
+        }
+        .container-signin h1{
+           text-align: center;
+           margin: 50px 0;
+           font-size:50px;
+        }
+        .container-signin button{
+           width: 100%;
+           border-radius:50px;
+           border: 1px solid #ccc;
+           margin-top:20px;
+            padding: 10px 10px;
+
+        }
+        .container-signin button:hover{
+            background-color: dodgerblue;
+            color:white;
+            border: 1px solid dodgerblue;  
+        }
+
+        .container-signin input{
+          border-radius:50px;
+          width: 100%;
+          padding: 20px 20px;
+          margin: 4px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+        }
+        .chart{
+            position: relative;
+            background: white;
+            border: 1px solid #888;
+            border-radius: 20px;
+            padding: 40px;
+            
+        }
+        .chart h1{
+           text-align: center;
+           margin-bottom: 50px;
+           font-size:50px;
+        }
+        .chart h4{
+           text-align: center;
+           
+           font-size:20px;
+        }
+      
+      </style>
+      <script>
+            window.onload = function () {
+
+            var chart1 = new CanvasJS.Chart("chartContainer1", {
+                animationEnabled: true,  
+
+                axisY: {
+                    title: "Units Sold",
+                    valueFormatString: "#0,,.",
+                    suffix: "mn",
+                    stripLines: [{
+                        value: 3366500,
+                        label: "Average"
+                    }]
+                },
+                data: [{
+                    yValueFormatString: "#,### Units",
+                    xValueFormatString: "YYYY",
+                    type: "spline",
+                    dataPoints: [
+                        {x: new Date(2002, 0), y: 2506000},
+                        {x: new Date(2003, 0), y: 2798000},
+                        {x: new Date(2004, 0), y: 3386000},
+                        {x: new Date(2005, 0), y: 6944000},
+                        {x: new Date(2006, 0), y: 6026000},
+                        {x: new Date(2007, 0), y: 2394000},
+                        {x: new Date(2008, 0), y: 1872000},
+                        {x: new Date(2009, 0), y: 2140000},
+                        {x: new Date(2010, 0), y: 7289000},
+                        {x: new Date(2011, 0), y: 4830000},
+                        {x: new Date(2012, 0), y: 2009000},
+                        {x: new Date(2013, 0), y: 2840000},
+                        {x: new Date(2014, 0), y: 2396000},
+                        {x: new Date(2015, 0), y: 1613000},
+                        {x: new Date(2016, 0), y: 2821000},
+                        {x: new Date(2017, 0), y: 2000000}
+                    ]
+                }]
+            });
+            chart1.render();
+
+
+
+            var chart2 = new CanvasJS.Chart("chartContainer2", {
+                exportEnabled: true,
+                animationEnabled: true,
+
+                legend:{
+                    cursor: "pointer",
+                    itemclick: explodePie
+                },
+                data: [{
+                    type: "pie",
+                    showInLegend: true,
+                    toolTipContent: "{name}: <strong>{y}%</strong>",
+                    indexLabel: "{name} - {y}%",
+                    dataPoints: [
+                        { y: 26, name: "School Aid", exploded: true },
+                        { y: 20, name: "Medical Aid" },
+                        { y: 5, name: "Debt/Capital" },
+                        { y: 3, name: "Elected Officials" },
+                        { y: 7, name: "University" },
+                        { y: 17, name: "Executive" },
+                        { y: 22, name: "Other Local Assistance"}
+                    ]
+                }]
+            });
+            chart2.render();
+            }
+
+
+            function explodePie (e) {
+                if(typeof (e.dataSeries.dataPoints[e.dataPointIndex].exploded) === "undefined" || !e.dataSeries.dataPoints[e.dataPointIndex].exploded) {
+                    e.dataSeries.dataPoints[e.dataPointIndex].exploded = true;
+                } else {
+                    e.dataSeries.dataPoints[e.dataPointIndex].exploded = false;
+                }
+                e.chart2.render();
+                
+                
+                
+              var chart3 = new CanvasJS.Chart("chartContainer3", {
+                animationEnabled: true,
+                theme: "light2", // "light1", "light2", "dark1", "dark2"
+        
+                axisY: {
+                    title: "Reserves(MMbbl)"
+                },
+                data: [{        
+                    type: "column",  
+                    showInLegend: true, 
+                    legendMarkerColor: "grey",
+                    legendText: "MMbbl = one million barrels",
+                    dataPoints: [      
+                        { y: 300878, label: "Venezuela" },
+                        { y: 266455,  label: "Saudi" },
+                        { y: 169709,  label: "Canada" },
+                        { y: 158400,  label: "Iran" },
+                        { y: 142503,  label: "Iraq" },
+                        { y: 101500, label: "Kuwait" },
+                        { y: 97800,  label: "UAE" },
+                        { y: 80000,  label: "Russia" }
+                    ]
+                }]
+            });
+            chart2.render();
+
+            }
+</script>
+ 
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+      
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <div class="container">    
+      <a class="navbar-brand" href="#">Expen<span style="color:limegreen;font-weight: bold;font-family:'Montserrat', sans-serif;">$</span>e Tracker</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" id="menu-btn" >
+       <span class="navbar-toggler-icon"></span>
+      </button>   
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+         <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Support</a>
+            </li> 
+
+            <button type="button" class="btn btn-dark" id="signin-btn" onclick="document.getElementById('id01').style.display='block'">USER</button>
+                
+          </ul>
+        </div>
+        </div>
+      </nav>
+
+    <div class="container" style="padding:50px;">
+        <div class="row">
+            <div class="col col-md-6">
+                  <form class="chart">
+                     <h1>Add expense+</h1> 
+                      <div class="row">
+                        <div class="col col-lg-8">
+                          <label for="first-name">Expense Name</label>    
+                          <input type="text" class="form-control" placeholder="e.g. pizza" id="first-name">
+                        </div>
+                        <div class="col-lg-4">  
+                          <label for=form-control>Amount</label>    
+                          <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                              </div>    
+                              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder=" 100">
+                            </div>
+                        </div>
+                      </div>
+
+
+                      <div class="row">
+                        <div class="col col-lg-6">
+                          <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Category</label>
+                              </div>
+                              <select class="custom-select" id="inputGroupSelect01">
+                                <option selected>Tap here</option>
+                                <option value="1">Food & Drinks</option>
+                                <option value="2">Travel</option>
+                                <option value="3">Bills</option>
+                                <option value="3">Others</option>  
+                              </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">        
+                          <input type="text" class="form-control" placeholder="Enter Date" id="Date">
+
+                        </div>
+                      </div>  
+                     <input placeholder="Add note">
+                    </form>
+            </div>
+            <div class="col col-md-6">
+                 <div class="chart"><h1>Expense List</h1></div>
+            </div>
+        </div>
+    
+    </div>
+      
+ <div class="container" style="padding: 50px;">
+      <hr style="position: relative;border:1px black solid;border-radius:15px;margin-top:-10px;margin-bottom:50px;">   
+      <div class="row">
+            <div class="col-md-6" >
+                <div class="chart">
+                    <h1><span style="color:crimson">Budget</span> vs Expense</h1>
+                    <div id="chartContainer1" style="height: 300px; width: 100%;"></div>
+
+                </div>
+            </div>  
+          <div class="col-md-6">
+                <div class="chart">
+                    <h1>Monthly Expense</h1>
+                    <div id="chartContainer2" style="height: 300px; width:100%;"></div>
+                </div>    
+          </div>
+      </div>
+      <div class="chart" style="margin-top:50px;">
+        <h1>Past Month Expenses </h1>      
+       <div id="chartContainer3" style="height: 400px; width: 100%;"></div>
+      </div>    
+</div>     
+
+  
+     
+      
+</body>
+</html>

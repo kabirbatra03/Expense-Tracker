@@ -1,0 +1,347 @@
+  
+        @font-face{
+
+            font-family:new;
+            src : url(font/Aileron-UltraLight.otf);              
+        }
+
+        @font-face{
+
+            font-family:new2;
+            src : url(font/Montserrat.ttf);
+        }
+        @font-face{
+            font-family:new3;
+            src :url(font/tagline3.otf)
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+          background: #007bff;
+          background: linear-gradient(to right, #0062E6, #33AEFF);
+        }
+        button{
+            font-family: 'Questrial', sans-serif;
+        }
+        .navbar{
+
+             box-shadow:  0 0 10px black;
+             background-color: black!important;
+
+        }
+        .nav-item a{
+             color:white!important;  
+             font-family: 'Questrial', sans-serif;
+             font-size: 18px;
+             margin-right: 20px;       
+        }
+        .nav-item a:hover{
+             color:dodgerblue!important;
+        }
+        .navbar-brand {
+             font-family:new ; 
+             font-weight: bolder; 
+             font-size: 35px;
+             color:white!important;  
+        }
+        .dropdown:hover .dropdown-menu {
+              display: block;
+        }
+        .dropdown-menu a{
+              color: black!important;
+              padding: 12px 16px;
+              text-decoration: none;
+              margin: -8px 0;
+        }
+        .dropdown-item a:hover{
+              background-color: none!important;        
+        }
+
+        .psw {
+          float: left;
+          padding-top: 16px;
+          color: black;     
+        }
+        .psw:hover{
+            text-decoration: none;
+            color:dodgerblue;
+        }
+        .remember-me{
+            width: 20px!imporatnt;
+            position: relative!important;
+            margin-top:10px!important;
+        }
+
+        .container form{
+            position: relative;
+            top:40px;
+            background-color: white;
+            border: 1px solid #888;
+            border-radius: 20px;
+            padding: 50px;
+        }
+        .container form h1{
+           text-align: center;
+           margin-bottom: 50px;
+           font-size:50px;
+        }
+        .container form button{
+           width: 100%;
+           border-radius:50px;
+           border: 1px solid #ccc;
+           margin-top:10px;
+           padding: 10px 10px;
+
+        }
+        .container form button:hover{
+            background-color: black;
+            color:white;
+            border: 1px solid dodgerblue;  
+        }
+
+        .container form label{
+           padding-left: 10px;
+        }    
+
+        .container form input{
+          border-radius:50px;
+          width: 100%;
+          padding: 20px 20px;
+          margin-bottom: 10px;
+          display: inline-block;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+        }
+
+
+        .image1{
+            position: relative;      
+            width:100%;   
+            background-image: url("Images/image3.jpg");
+            height:710px; 
+        } 
+        .parallax {
+             background-attachment: fixed;
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;
+        } 
+        
+        .tagline{
+            padding: 15% 0;
+            z-index: 2;
+            position: relative;
+        }
+        .tagline h1{
+            color: white;
+            text-shadow: 0 0 20px black; 
+            font-family:new;
+            font-size:400%;
+            font-weight: bolder;
+            text-align: center;
+        }
+        .tagline h2{
+
+            color: white;
+            font-size:170%;
+            font-family: 'Montserrat', sans-serif;
+            text-shadow: 0 0 20px black; 
+            text-align: center;
+            font-weight: bolder;
+        }
+        #join-now{
+            color:white;
+            font-size:medium;
+            border: 1px solid #fff;
+            padding: 10px 30px;
+            text-decoration: none; 
+            font-family: 'Oswald','Helvetica','Arial',sans-serif;
+            box-shadow: 0 0 5px black; 
+            transition: 0.4s ease; 
+            font-weight: 400;
+            line-height: 150px;
+        }
+        #join-now:hover{
+            background: white;
+            color:black;
+            text-shadow: none;
+        }
+        .description{
+            padding: 5% 10px;
+        }
+        .description h1{
+             color:white;
+              font-family:new;
+              font-size:350%;
+              text-align: center;
+              font-weight:bolder;
+              margin-bottom: 50px;
+        } 
+         .description h2{
+             color:white;
+             text-align: center;
+             font-family: 'Montserrat', sans-serif;
+             font-size:25px;
+             font-weight: bolder;
+             padding: 0 10%;
+        }
+        .read-more{
+          font-family: 'Montserrat', sans-serif;
+          text-align: center;
+          color: #000;
+          font-size: medium;
+          line-height: 10em;
+          position: relative;
+          padding: 20px 40px;
+          text-decoration: none;
+          background-color: #000;
+          color: #fff;
+        }
+
+        .read-more:hover{
+          background-color: grey;
+          transition: .3s ease;
+        }
+        .image2{      
+            width:100%;   
+            background-image: url("Images/image2.jpeg");
+            height:500px; 
+        }
+         .info{
+            
+            margin-top:-50px;
+        }
+        .section{
+            padding:10% 10px;
+            overflow: hidden;    
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float:right;
+        }
+        .intext h1{
+            position: relative;
+            margin-top: 100px;
+            color:white;
+            font-family:"Cyrillic",'Arial','Helvetica',sans-serif;
+            font-size:70px;
+            letter-spacing: -1px;
+            
+        }
+        .intext p{
+            position: relative;
+            color:black;
+            font-family: 'helveticaneuew01-45ligh','helveticaneuew02-45ligh','helveticaneuew10-45ligh',sans-serif;
+            font-size:25px;
+            
+        }
+        .art12{
+            width:400px;
+            height:400px;
+            float:right;
+        }
+        .art2{
+           width:400px;
+            height:400px;
+            float:left;
+        }
+        .image3{
+            position: relative;      
+            width:100%;   
+            background-image: url("Images/image7.jpg");
+            height:500px; 
+        }  
+
+
+        footer{
+            height: 300px; 
+            position: relative;
+            list-style: none;
+            position: relative;
+        }
+        .social-media{
+            width:100%;
+            height:150px;
+        }
+
+        .social-media ul{
+            list-style-type: none;
+            margin: 0 0 30px 0;
+            padding: 50px 0 0 0;
+            text-align: center;
+        }
+        .social-media li{
+            display: inline-block;
+            margin: 25px 0px;
+            margin-bottom: 4px;
+            color: white;
+        }
+        .media-logo{    
+           padding:15px 10px;
+           border-radius: 50%;
+           width: 60px;
+           color:white;         
+        }
+        .fb{
+           
+           background: #3B5998;
+        }
+        .fb:hover{ 
+            
+           background: white;
+           color:#3B5998;
+        }
+        .twitter{
+            
+           background: #1AACED;
+        }
+        .twitter:hover{
+            background: white;
+            color:#1AACED;
+        }
+        .yt{
+    
+             background: #BB0000;
+     
+        }
+        .yt:hover{
+
+            background: white;
+            color:#BB0000;
+
+        }
+        .insta{
+             background: #517EA4;
+        
+        }
+        .insta:hover{
+        
+             background: white;
+             color:#517EA4;
+
+        }
+        #logo{
+            color:white;
+            font-family: "Montserrat";
+            font-size:30px;
+            text-align: center;
+            margin-top: 50px;
+            font-weight: 700;
+        }
+        #copy-right{
+            color:white;
+            font-family: 'Questrial', sans-serif;
+            font-size:15px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+ 
+
+          
+          
+    
+      

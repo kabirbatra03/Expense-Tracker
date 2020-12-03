@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    
+    <title>SIGN UP - Form</title>
+    
+    <style>
+        
+        
+   
+        
+     .container form{
+        position: relative;
+        top:40px;
+        background-color: white;
+        border: 1px solid #888;
+        border-radius: 20px;
+        padding: 50px;
+    }
+     .container form button{
+       width: 100%;
+       border-radius:50px;
+       border: 1px solid #ccc;
+       margin-top:10px;
+       padding: 10px 10px;
+
+    }
+    .container form button:hover{
+        background-color: black;
+        color:white;
+        border: 1px solid dodgerblue;  
+    }        
+
+
+
+    </style>   
+    
+  </head>
+  <body>
+      
+   <?php include'header.php'?>
+
+   <div class="container" style="width:35%!important;min-width:330px!important">
+
+      <form  action="/action_page.php" method="post" >
+
+        <div class="container-signin">
+          <h1>Forgot<br>Password</h1> 
+          <h5 style="text-align: center;font-weight: 300" >Enter your registered Email.</h5>    
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn btn-danger" id="back">Back</button>    
+        </div>
+      </form>
+    </div>  
+    
+
+
+    </body>
+    
+</html>
