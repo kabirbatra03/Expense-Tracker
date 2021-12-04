@@ -8,5 +8,3 @@ Expense Tracker is complete website built using PHP to track all your expenses b
 3. Turn OFF 2-step Verification in your google account.
 4. Turn ON less secure apps setting in your google account.
 
-## Visit my project live 
-www.trackmyexpense.ml
